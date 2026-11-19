@@ -1,0 +1,25 @@
+/* variables.css — warna, font, bentuk. Ubah tema cukup dari sini. */
+:root {
+  --font-head: "Poppins", "Raleway", sans-serif;
+  --font-body: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --bg: #f5f6fb;
+  --surface: #ffffff;
+  --text: #475569;
+  --heading: #0b1220;
+  --muted: #94a3b8;
+  --line: #e5e7f0;
+
+  --accent: #6366f1;      /* indigo */
+  --accent-2: #06b6d4;    /* cyan   */
+  --dark: #0b1020;
+  --dark-2: #151a33;
+  --gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+
+  --radius: 20px;
+  --arch: 50% 50% 28px 28px / 40% 40% 28px 28px;   /* bentuk lengkung foto */
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, .06);
+  --shadow-md: 0 14px 38px rgba(15, 23, 42, .10);
+  --shadow-lg: 0 24px 60px rgba(99, 102, 241, .28);
+  --nav-h: 74px;
+}

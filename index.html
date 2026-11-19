@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Arnes Ginting - Teacher &amp; Web Developer</title>
+<meta content="Teacher, Web Developer, Programmer, English Educator" name="description">
+<meta content="Arnes Ginting, Teacher, Web Developer, Laravel, Programming" name="keywords">
+<meta content="#0b1020" name="theme-color">
+
+<!-- Menandai bahwa JavaScript aktif (dipakai CSS untuk animasi) -->
+<script>document.documentElement.classList.add('js');</script>
+
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236366f1'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EA%3C/text%3E%3C/svg%3E" rel="icon">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;family=Poppins:wght@400;500;600;700;800;900&amp;family=Raleway:wght@400;600;800&amp;display=swap" rel="stylesheet">
+
+<!-- Custom CSS (urutan jangan diubah) -->
+<link href="variables.css" rel="stylesheet">
+<link href="base.css" rel="stylesheet">
+<link href="components.css" rel="stylesheet">
+<link href="responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Ikon (sprite SVG) — tidak butuh library apa pun -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2l10 5-10 5L2 7l10-5z"/><path d="M2 12l10 5 10-5M2 17l10 5 10-5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></symbol>
+  <symbol id="i-translate" viewBox="0 0 24 24"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 7 8M12 5c-1 4-4 7-8 9"/><path d="M13 21l4-10 4 10M14.5 18h5"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5M11 8v6M8 11h6"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 1.5-2-.6-1.2.2-2.5 1.5-2.5H17a4 4 0 0 0 4-4c0-5-4-9.5-9-9.5z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5-4.5-2.5z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-7M12 13c0-2 1.5-3 3-3s2.5 1 2.5 3v4"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.3 2.5 2 4.2 5 4.5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+</svg>
+
+<div id="preloader"></div>
+
+<!-- ================= TOPBAR ================= -->
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <a href="#hero" class="brand">ARNES<span>.</span>GINTING</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu"><svg class="ic i-menu" aria-hidden="true"><use href="#i-menu"/></svg><svg class="ic i-x" aria-hidden="true"><use href="#i-x"/></svg></button>
+
+    <ul class="menu" id="menu">
+      <li><a href="#hero"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg> Home</a></li>
+      <li><a href="#about"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg> About</a></li>
+      <li><a href="#skills"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg> Skills</a></li>
+      <li><a href="#resume"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> Resume</a></li>
+      <li><a href="#portfolio"><svg class="ic" aria-hidden="true"><use href="#i-award"/></svg> Certificates</a></li>
+      <li><a href="#services"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg> Services</a></li>
+      <li><a href="#contact"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg> Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="hello">Hello, I'm</span>
+      <h1>Arnes <em>Ginting</em></h1>
+      <div class="role">
+        <span class="typed-text" id="typed" data-items="Teacher, Web Developer, Programmer, English Educator">Teacher</span><span class="cursor"></span>
+      </div>
+      <p class="lead">An educator and web developer passionate about English language teaching, programming education, and building practical web projects.</p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-main"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> Contact Me</a>
+        <a href="#resume" class="btn-ghost"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg> View Resume</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.tiktok.com/@arnesginting04" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ic" aria-hidden="true"><use href="#i-tiktok"/></svg></a>
+        <a href="https://www.facebook.com/ernest.aronezz/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        <a href="https://www.instagram.com/arnesginting420" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        <a href="https://www.youtube.com/@atekuje" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ic" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+      </div>
+
+      <div class="stats">
+        <div><b>10+</b><span>Years in Education</span></div>
+        <div><b>3</b><span>Institutions</span></div>
+        <div><b>4</b><span>Languages Taught</span></div>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-wrap"><img src="foto.jpeg" alt="Arnes Ginting"></div>
+      <div class="float f1"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg> English Teacher</div>
+      <div class="float f2"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Web Developer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="block alt about">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <span class="eyebrow">About Me</span>
+      <h2>Who I Am</h2>
+      <p>I am an educator and web developer with experience in education, English language teaching, programming, and web development.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img src="foto.jpeg" alt="Arnes Ginting">
+        <div class="about-badge"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg><div>Teaching since 2015<small>English &amp; Programming</small></div></div>
+      </div>
+
+      <div class="reveal">
+        <h3>Teacher &amp; Web Developer</h3>
+        <p class="quote">I am passionate about education and technology, especially web development and programming education.</p>
+
+        <ul class="info-list">
+          <li><small>Name</small><span>Arnes Ginting, S.Pd.</span></li>
+          <li><small>Profession</small><span>Teacher &amp; Web Developer</span></li>
+          <li><small>Education</small><span>Bachelor of English Education</span></li>
+          <li><small>Languages</small><span>Indonesian &amp; English</span></li>
+          <li><small>Programming</small><span>PHP, JavaScript, Python</span></li>
+          <li><small>Framework</small><span>Laravel</span></li>
+          <li><small>Skills</small><span>Laravel &amp; PHP</span></li>
+          <li><small>Teaching</small><span>English &amp; Programming</span></li>
+        </ul>
+
+        <p>I believe that effective learning should combine theoretical knowledge with practical experience. Through hands-on projects, I help students understand programming concepts and apply them to real-world situations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="block">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <span class="eyebrow">Skills</span>
+      <h2>What I Can Do</h2>
+      <p>My skills include programming, web development, data visualization, language, and creative activities.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="panel reveal">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg> Programming &amp; Web</h3>
+        <div class="skill"><div class="skill-top"><span>HTML</span><b>90%</b></div><div class="bar"><span style="--lvl:90%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>CSS</span><b>85%</b></div><div class="bar"><span style="--lvl:85%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>JavaScript</span><b>80%</b></div><div class="bar"><span style="--lvl:80%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>PHP &amp; Frameworks</span><b>85%</b></div><div class="bar"><span style="--lvl:85%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>Python</span><b>80%</b></div><div class="bar"><span style="--lvl:80%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>C++</span><b>75%</b></div><div class="bar"><span style="--lvl:75%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>Java</span><b>70%</b></div><div class="bar"><span style="--lvl:70%"></span></div></div>
+      </div>
+
+      <div class="panel reveal">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-palette"/></svg> Teaching, Data &amp; Creative</h3>
+        <div class="skill"><div class="skill-top"><span>English</span><b>90%</b></div><div class="bar"><span style="--lvl:90%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>Data Visualization</span><b>80%</b></div><div class="bar"><span style="--lvl:80%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>Scratch</span><b>85%</b></div><div class="bar"><span style="--lvl:85%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>Piano</span><b>75%</b></div><div class="bar"><span style="--lvl:75%"></span></div></div>
+        <div class="skill"><div class="skill-top"><span>Guitar</span><b>75%</b></div><div class="bar"><span style="--lvl:75%"></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section id="resume" class="block alt">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <span class="eyebrow">Resume</span>
+      <h2>Experience &amp; Education</h2>
+      <p>An educator with experience in English language teaching, programming education, and web development, with a strong interest in technology and practical learning.</p>
+    </div>
+
+    <div class="summary reveal">
+      <h3>Arnes Ginting, S.Pd.</h3>
+      <p>Educator with experience in English language teaching and programming education. Passionate about technology, web development, and helping students develop practical skills through project-based learning.</p>
+    </div>
+
+    <div class="resume-grid">
+      <div class="reveal">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg> Professional Experience</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="date">2024 - Present</span>
+            <h4>English Teacher</h4>
+            <div class="place">SMK Swasta Tri Karya Sunggal</div>
+            <ul>
+              <li>Teach English to vocational high school students.</li>
+              <li>Develop learning materials and classroom activities.</li>
+              <li>Apply practical and interactive approaches to English language learning.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <span class="date">2019 - 2024</span>
+            <h4>Coding Educator</h4>
+            <div class="place">BrightCHAMPS</div>
+            <ul>
+              <li>Taught programming and coding to students.</li>
+              <li>Introduced students to programming concepts through practical projects.</li>
+              <li>Worked with Python, Java, JavaScript, and C++.</li>
+            </ul>
+          </div>
+
+          <div class="tl-item">
+            <span class="date">2015 - 2019</span>
+            <h4>English Teacher</h4>
+            <div class="place">Teknos Genius Medan</div>
+            <ul>
+              <li>Taught English language skills to students.</li>
+              <li>Prepared learning materials and classroom activities.</li>
+              <li>Helped students improve their communication and English language skills.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg> Education</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="date">2011 - 2015</span>
+            <h4>Bachelor of English Education</h4>
+            <div class="place">University of Prima Indonesia</div>
+            <p>Studied English language education with a focus on language teaching, communication, and educational development.</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="date">2009 - 2011</span>
+            <h4>Vocational High School</h4>
+            <div class="place">SMK I Immanuel Kabanjahe</div>
+            <p>Completed vocational secondary education and developed practical and professional skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="portfolio" class="block">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <span class="eyebrow">Portfolio</span>
+      <h2>Certificates &amp; Achievements</h2>
+      <p>A collection of certificates, professional achievements, and learning experiences that reflect my skills and development.</p>
+    </div>
+
+    <div class="cert-grid">
+      <a href="toefl.png" class="cert reveal" title="English Proficiency Certificate">
+        <div class="thumb"><svg class="ic ph" aria-hidden="true"><use href="#i-image"/></svg><img src="toefl.png" alt="English Proficiency Certificate" loading="lazy" onerror="this.remove()"></div>
+        <span class="zoom"><svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+        <div class="cert-info"><h4>English Proficiency Certificate</h4><p>Certificate related to English language proficiency and professional development.</p></div>
+      </a>
+
+      <a href="pelatihan.png" class="cert reveal" title="Teaching Certificate">
+        <div class="thumb"><svg class="ic ph" aria-hidden="true"><use href="#i-image"/></svg><img src="pelatihan.png" alt="Teaching Certificate" loading="lazy" onerror="this.remove()"></div>
+        <span class="zoom"><svg class="ic" aria-hidden="true"><use href="#i-zoom"/></svg></span>
+        <div class="cert-info"><h4>Teaching Certificate</h4><p>Certificate related to teaching, education, and professional development.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="block alt">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>How I Can Help</h2>
+      <p>I provide educational and technology-related services, focusing on programming, web development, English learning, and practical project-based learning.</p>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg></div><h4>Programming</h4><p>Learn programming through practical projects using Python, Java, C++, JavaScript, and PHP.</p></div>
+      <div class="svc reveal"><div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-window"/></svg></div><h4>Web Development</h4><p>Build modern and responsive websites using HTML, CSS, JavaScript, PHP, and Laravel.</p></div>
+      <div class="svc reveal"><div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></div><h4>Data Visualization</h4><p>Create clear and informative visual representations of data to make information easier to understand.</p></div>
+      <div class="svc reveal"><div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-translate"/></svg></div><h4>English Teaching</h4><p>English lessons designed to improve grammar, vocabulary, communication, and practical language skills.</p></div>
+      <div class="svc reveal"><div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-video"/></svg></div><h4>Online Tutoring</h4><p>Flexible online learning sessions through Zoom, focusing on programming, English, and technology.</p></div>
+      <div class="svc reveal"><div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg></div><h4>Project-Based Learning</h4><p>Practical learning through real-world projects that help students develop creativity, problem-solving, and technical skills.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="block">
+  <div class="wrap">
+    <div class="block-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Get In Touch</h2>
+      <p>Feel free to contact me for teaching, programming, web development, online tutoring, or collaboration opportunities.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="c-item"><div class="ibox"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></div><div><h4>Location</h4><p>Medan, North Sumatra, Indonesia</p></div></div>
+        <div class="c-item"><div class="ibox"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg></div><div><h4>Name</h4><p>Arnes Ginting, S.Pd.</p></div></div>
+        <div class="c-item"><div class="ibox"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></div><div><h4>Profession</h4><p>Teacher &amp; Web Developer</p></div></div>
+        <div class="c-item"><div class="ibox"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></div><div><h4>Email</h4><p><a href="mailto:arnesginting420@gmail.com">arnesginting420@gmail.com</a></p></div></div>
+      </div>
+
+      <!-- Form statis: membuka aplikasi email pengunjung, tanpa server/database -->
+      <form id="contact-form" class="form reveal">
+        <div class="form-row">
+          <div class="field">
+            <label for="name-field">Your Name</label>
+            <input type="text" name="nama" id="name-field" placeholder="Enter your name" required>
+          </div>
+          <div class="field">
+            <label for="email-field">Your Email</label>
+            <input type="email" name="email" id="email-field" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject-field">Subject</label>
+          <input type="text" name="subjek" id="subject-field" placeholder="Enter subject" required>
+        </div>
+        <div class="field">
+          <label for="message-field">Message</label>
+          <textarea name="pesan" id="message-field" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+        <div class="sent-message" id="sent-message">Your email app has been opened. Please press Send there to deliver your message.</div>
+        <button type="submit" class="btn-main"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="socials">
+      <a href="https://www.tiktok.com/@arnesginting04" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ic" aria-hidden="true"><use href="#i-tiktok"/></svg></a>
+      <a href="https://www.facebook.com/ernest.aronezz/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="ic" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+      <a href="https://www.instagram.com/arnesginting420" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+      <a href="https://www.youtube.com/@atekuje" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ic" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+      <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+    </div>
+    <p>Copyright <strong>arnesginting2026</strong> All Rights Reserved</p>
+  </div>
+</footer>
+
+<a href="#hero" id="scroll-top" aria-label="Back to top"><svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
